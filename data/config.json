@@ -1,0 +1,82 @@
+{
+  "lmstudio": {
+    "auto_detect": true,
+    "candidates": [
+      "http://XXX.XXX.X.XX:1234/v1",
+      "http://127.0.0.1:1234/v1"
+    ],
+    "probe_timeout": 2.5,
+    "endpoint_ttl": 30,
+    "base_url": "http://127.0.0.1:1234/v1",
+    "api_key": "lm-studio",
+    "model": "google/gemma-4-e4b",
+    "temperature": 0.35,
+    "max_tokens": 1400,
+    "timeout": 180,
+    "context_messages": 24,
+    "vision": "auto",
+    "vision_max_px": 1024,
+    "vision_quality": 80,
+    "vision_max_images": 2,
+    "extra_body": {}
+  },
+  "agent": {
+    "max_steps": 6,
+    "auto_window_screenshot": true,
+    "visual_verify": true,
+    "verify_min_diff": 0.0002,
+    "grid_step": 100,
+    "stop_on_captcha": true,
+    "language": "ru",
+    "auto_title": true,
+    "stream_thoughts": true
+  },
+  "voice": {
+    "stt_engine": "faster-whisper",
+    "whisper_model": "medium",
+    "whisper_compute_type": "auto",
+    "whisper_device": "auto",
+    "whisper_beam_size": 5,
+    "whisper_initial_prompt": "Команды ИИ-ассистенту на русском языке. Открой блокнот, найди отзывы, введи текст.",
+    "stt_language": "ru",
+    "continuous_listen": true,
+    "tts_enabled": true,
+    "tts_always": false,
+    "tts_engine": "auto",
+    "tts_voice": "ru-RU-DmitryNeural",
+    "sapi_voice": "",
+    "tts_rate": "+8%",
+    "tts_volume": "+0%",
+    "input_device": "",
+    "output_device": "",
+    "vad_threshold": 0.015,
+    "silence_ms": 1100,
+    "max_record_s": 30,
+    "auto_send_voice": true,
+    "listen_on_start": false,
+    "status_history": 4,
+    "stt_model_upgraded": true
+  },
+  "safety": {
+    "confirm_shell": true,
+    "confirm_power": true,
+    "confirm_files": true,
+    "confirm_typing": true,
+    "allowed_tools": []
+  },
+  "ui": {
+    "theme": "dark",
+    "orbs": true,
+    "send_with_enter": true,
+    "mode": "",
+    "ask_mode": true,
+    "voice_square_window": true,
+    "voice_window_size": 760,
+    "last_mode": "voice"
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8756,
+    "open_browser": true
+  }
+}
